@@ -46,7 +46,7 @@ authors="bt7s7k7"
 
 # The description text for the mod (multi line!) (#mandatory)
 description='''
-Take your chest, tanks, or whatever NBT containing block you want with you by packing it up with packing tape!
+Take your chest, tanks, or whatever NBT containing block you want with you, by packing it up with packing tape!
 '''
 
 # The [[mixins]] block allows you to declare your mixin config to FML so that it gets loaded.
