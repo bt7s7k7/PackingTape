@@ -5,6 +5,7 @@ import org.slf4j.Logger;
 import com.mojang.logging.LogUtils;
 
 import bt7s7k7.packing_tape.components.IsPacked;
+import bt7s7k7.packing_tape.items.PackingTapeItem;
 import net.minecraft.core.component.DataComponentType;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -29,7 +30,7 @@ public class PackingTape {
 			.persistent(IsPacked.CODEC)
 			.networkSynchronized(IsPacked.STREAM_CODEC));
 
-	public static final DeferredItem<Item> PACKING_TAPE = ITEMS.registerSimpleItem("packing_tape", new Item.Properties());
+	public static final DeferredItem<Item> PACKING_TAPE = ITEMS.register("packing_tape", () -> new PackingTapeItem(new Item.Properties()));
 
 	public PackingTape(IEventBus modEventBus, ModContainer modContainer) {
 		ITEMS.register(modEventBus);

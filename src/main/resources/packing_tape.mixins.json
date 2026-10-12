@@ -4,7 +4,8 @@
 	"package": "bt7s7k7.packing_tape.mixins",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-		"BlockEntityMixin"
+		"BlockEntityMixin",
+		"BlockItemMixin"
 	],
 	"client": [
 		"PickBlockMixin"
