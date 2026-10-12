@@ -15,9 +15,9 @@ import net.minecraft.world.level.Level;
 @Mixin(BlockItem.class)
 public class BlockItemMixin {
 	@Inject(method = "updateCustomBlockEntityTag(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/item/ItemStack;)Z", at = @At("HEAD"), cancellable = true)
-	private static void packingTape$updateCustomBlockEntityTag(Level level, Player player, BlockPos pos, ItemStack stack, CallbackInfoReturnable<Boolean> info) {
+	private static void packingTape$updateCustomBlockEntityTag(Level level, Player player, BlockPos pos, ItemStack stack, CallbackInfoReturnable<Boolean> cir) {
 		if (PackedItemUtil.tryApplyOpDataInSurvival(level, player, pos, stack)) {
-			info.setReturnValue(true);
+			cir.setReturnValue(true);
 		}
 	}
 }

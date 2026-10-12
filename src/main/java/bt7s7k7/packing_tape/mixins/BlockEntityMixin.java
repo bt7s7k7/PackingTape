@@ -14,7 +14,7 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 @Mixin(BlockEntity.class)
 public class BlockEntityMixin {
 	@Inject(method = "saveToItem", at = @At("RETURN"))
-	public void packingTape$onSaveToItem(ItemStack stack, HolderLookup.Provider registries, CallbackInfo info) {
+	public void packingTape$onSaveToItem(ItemStack stack, HolderLookup.Provider registries, CallbackInfo ci) {
 		PackedItemUtil.addDataDescription(stack);
 	}
 
