@@ -1,0 +1,16 @@
+{
+	"required": true,
+	"minVersion": "0.8",
+	"package": "bt7s7k7.packing_tape.mixins",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"BlockEntityMixin"
+	],
+	"client": [
+		"PickBlockMixin"
+	],
+	"server": [],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

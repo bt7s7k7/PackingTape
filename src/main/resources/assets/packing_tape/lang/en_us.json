@@ -1,13 +1,8 @@
 {
-  "itemGroup.packing_tape": "Example Mod Tab",
-  "block.packing_tape.example_block": "Example Block",
-  "item.packing_tape.example_item": "Example Item",
-
-  "packing_tape.configuration.title": "Packing Tape Configs",
-  "packing_tape.configuration.section.packing_tape.common.toml": "Packing Tape Configs",
-  "packing_tape.configuration.section.packing_tape.common.toml.title": "Packing Tape Configs",
-  "packing_tape.configuration.items": "Item List",
-  "packing_tape.configuration.logDirtBlock": "Log Dirt Block",
-  "packing_tape.configuration.magicNumberIntroduction": "Magic Number Text",
-  "packing_tape.configuration.magicNumber": "Magic Number"
+	"item.packing_tape.packing_tape": "Packing Tape",
+	"gui.packing_tape.is_packed": "Packed with packing tape",
+	"gui.packing_tape.item_count": "%s items",
+	"packing_tape.configuration.title": "Packing Tape Configs",
+	"packing_tape.configuration.section.packing_tape.common.toml": "Packing Tape Configs",
+	"packing_tape.configuration.section.packing_tape.common.toml.title": "Packing Tape Configs"
 }
