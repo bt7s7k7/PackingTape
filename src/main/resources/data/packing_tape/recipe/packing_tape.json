@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "result": {
+    "id": "packing_tape:packing_tape"
+  },
+  "ingredients": [
+    {
+      "item": "minecraft:paper"
+    },
+    {
+      "item": "minecraft:paper"
+    },
+    {
+      "item": "minecraft:honeycomb"
+    }
+  ]
+}
