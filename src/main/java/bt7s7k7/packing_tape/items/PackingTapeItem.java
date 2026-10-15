@@ -31,8 +31,11 @@ public class PackingTapeItem extends Item {
 
 			// Check if we are configured to allow packing this block
 			var blockEntity = context.getLevel().getBlockEntity(context.getClickedPos());
+			// Handle blocks that do not have an item, like the nether portal
 			var isBlockWithoutItem = stack.isEmpty();
-			if (isBlockWithoutItem || !CanBePackedPredicate.instance().test(stack, blockEntity)) {
+			// Handle result items that won't be able to be placed
+			var isSpecial = !(stack.getItem() instanceof BlockItem);
+			if (isBlockWithoutItem || isSpecial || !CanBePackedPredicate.instance().test(stack, blockEntity)) {
 				context.getPlayer().displayClientMessage(Component.translatable("message.packing_tape.not_allowed").withStyle(ChatFormatting.RED), true);
 				break;
 			}
