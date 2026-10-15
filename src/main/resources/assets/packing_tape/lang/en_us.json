@@ -2,7 +2,12 @@
 	"item.packing_tape.packing_tape": "Packing Tape",
 	"gui.packing_tape.is_packed": "Packed with packing tape",
 	"gui.packing_tape.item_count": "%s items",
+	"message.packing_tape.not_allowed": "This block cannot be packed",
 	"packing_tape.configuration.title": "Packing Tape Configs",
+	"packing_tape.configuration.blocks_by_default": "Allow blocks by default",
+	"packing_tape.configuration.block_entities_by_default": "Allow block entities by default",
+	"packing_tape.configuration.whitelist": "Whitelist",
+	"packing_tape.configuration.blacklist": "Blacklist",
 	"packing_tape.configuration.section.packing_tape.common.toml": "Packing Tape Configs",
 	"packing_tape.configuration.section.packing_tape.common.toml.title": "Packing Tape Configs"
 }
