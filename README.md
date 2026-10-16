@@ -1,8 +1,8 @@
 # Packing tape
 
-![Short clip showcasing packing up a double chest filled with items and moving it somewhere else](docs/showcase.webp)
+![Short clip showcasing packing up a double chest filled with items and moving it somewhere else](https://github.com/bt7s7k7/PackingTape/blob/master/docs/showcase.webp?raw=true)
 
-Take your chest, tanks, or whatever NBT containing block you want with you, by packing it up with packing tape! Using this mod, you can turn any block entity into an item and place them somewhere else. Useful for things like moving bases or moving out project supplies.
+Take your chest, tanks, or whatever NBT containing block you want with you, by packing it up with packing tape! Using this mod, you can turn any block into an item and place them somewhere else. Useful for things like moving bases or moving out project supplies.
 
 ## Features
 - **Pick up any block entity:** Wide compatibility by building atop Minecraft's standard pick block with data functionality
