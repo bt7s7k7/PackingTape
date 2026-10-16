@@ -13,12 +13,12 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 
 @Mixin(BlockEntity.class)
 public class BlockEntityMixin {
-	@Inject(method = "saveToItem", at = @At("RETURN"))
+	@Inject(method = "saveToItem", at = @At("RETURN"), remap = false)
 	public void packingTape$onSaveToItem(ItemStack stack, HolderLookup.Provider registries, CallbackInfo ci) {
 		PackedItemUtil.addDataDescription(stack);
 	}
 
-	@ModifyVariable(method = "applyComponentsFromItemStack", at = @At("HEAD"), ordinal = 0)
+	@ModifyVariable(method = "applyComponentsFromItemStack", at = @At("HEAD"), ordinal = 0, remap = false)
 	public ItemStack packingTape$applyComponentsFromItemStack(ItemStack stack) {
 		return PackedItemUtil.removeDescriptionBeforeLoad(stack);
 	}

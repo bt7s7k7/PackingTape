@@ -13,7 +13,7 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 
 @Mixin(Minecraft.class)
 public class PickBlockMixin {
-	@Inject(method = "addCustomNbtData", at = @At("RETURN"))
+	@Inject(method = "addCustomNbtData", at = @At("RETURN"), remap = false)
 	private void packingTape$onAddCustomNbtData(ItemStack stack, BlockEntity blockEntity, RegistryAccess registryAccess, CallbackInfo ci) {
 		PackedItemUtil.markItemStack(stack);
 	}
