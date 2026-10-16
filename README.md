@@ -1,5 +1,7 @@
 # Packing tape
 
+![Short clip showcasing packing up a double chest filled with items and moving it somewhere else](docs/showcase.webp)
+
 Take your chest, tanks, or whatever NBT containing block you want with you, by packing it up with packing tape! Using this mod, you can turn any block entity into an item and place them somewhere else. Useful for things like moving bases or moving out project supplies.
 
 ## Features
