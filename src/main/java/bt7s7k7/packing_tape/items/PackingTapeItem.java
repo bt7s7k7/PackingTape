@@ -52,7 +52,7 @@ public class PackingTapeItem extends Item {
 
 			// Remove the packed up block from level -- blockEntity being null is handled by Clearable.tryClear
 			Clearable.tryClear(blockEntity);
-			level.setBlock(context.getClickedPos(), Blocks.AIR.defaultBlockState(), Block.UPDATE_SUPPRESS_DROPS);
+			level.setBlock(context.getClickedPos(), Blocks.AIR.defaultBlockState(), Block.UPDATE_SUPPRESS_DROPS | Block.UPDATE_ALL);
 
 			// Drop the packed item
 			Block.popResource(level, context.getClickedPos(), stack);
